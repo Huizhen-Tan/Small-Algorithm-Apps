@@ -1,2 +1,1 @@
-# Small-Games
-classic small games 
+# Some small algorithm apps
