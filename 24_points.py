@@ -1,3 +1,9 @@
+"""
+This code randomly and repeatly gives you four cards, and you can take your time to come up with a way, using only operators (+,-,*,/) to get 24 points.
+Press q to quit, and others to see the answer and continue.
+Note that calculations in the answer is from left to right without operator priority.
+"""
+
 from itertools import permutations, product
 from random import sample
 
@@ -6,7 +12,6 @@ def valid(num, case):
     num: [1,2,3,12]
     case: (1,2,3) as (+,-,*)
     """
-
     dic = {1:'A',11:'J',12:'Q',13:'K'}
     ans = num[0]
     string = str(ans) if ans not in dic else dic[ans]
@@ -40,7 +45,6 @@ def valid2(cards):
                 if validation[0]==1:
                     return validation[1]
     return None
-
 
 while 1:
     SAMPLE = sample(['A','J','Q','K']+[str(i) for i in range(2,11)],4) #['3', '2', 'A', 'Q']
