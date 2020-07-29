@@ -1,3 +1,8 @@
+"""
+Input a proper fraction, the script will divide it into Egyptian fractions.
+Input form: (string) '8/11'
+"""
+
 def divide(a,b):
     a1 , b1 = a , b
     while a1!=0 and b1!= 0 and b1 % a1 != 0:
